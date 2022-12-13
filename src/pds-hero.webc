@@ -1,0 +1,10 @@
+<h1 webc:keep webc:root>
+	<slot></slot>
+</h1>
+
+<style webc:scoped>
+	:host {
+		color: rebeccapurple;
+		font-style: italic;
+	}
+</style>

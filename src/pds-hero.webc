@@ -4,7 +4,9 @@
 
 <style webc:scoped>
 	:host {
-		color: rebeccapurple;
-		font-style: italic;
+		color: var(--colours-custom-primary-900);
+		font-family: var(--typography-fonts-heading);
+		font-size: var(--typography-font-sizes-6xl);
+		line-height: var(--typography-line-heights-shorter);
 	}
 </style>

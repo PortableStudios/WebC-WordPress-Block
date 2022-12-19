@@ -1,4 +1,3 @@
-const { urlToRequest } = require("loader-utils");
 const { validate } = require("schema-utils");
 
 const schema = {
@@ -18,10 +17,6 @@ module.exports = async function (source) {
 		baseDataPath: "options",
 	});
 
-	console.log("PATH:", urlToRequest(this.resourcePath));
-
-	console.log("SOURCE:", source);
-
 	const { WebC } = await import("@11ty/webc");
 
 	const page = new WebC();
@@ -35,14 +30,23 @@ module.exports = async function (source) {
 
 	const { html, css, js } = compiled;
 
-	console.log("COMPILED:", compiled);
+	const scripts =
+		js.length !== 0
+			? `<script dangerouslySetInnerHTML={{__html: \`${js.join("\n")}\` />`
+			: ``;
+
+	const styles =
+		css.length !== 0
+			? `<style dangerouslySetInnerHTML={{__html: \`${css.join("\n")}\` }} />`
+			: ``;
 
 	return `
-		module.exports = \`
-			<style>
-				${css}
-			</style>
-			${html}
-		\`
-	`;
+		export default () => (
+			<>
+				${styles}
+				${html.trim()}
+				${scripts}
+			</>
+		)
+	`.trim();
 };

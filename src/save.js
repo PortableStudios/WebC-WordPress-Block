@@ -17,10 +17,5 @@ import PDSHero from "./page.webc";
  * @return {WPElement} Element to render.
  */
 export default function save() {
-	return (
-		<div
-			{...useBlockProps.save()}
-			dangerouslySetInnerHTML={{ __html: PDSHero }}
-		></div>
-	);
+	return <PDSHero {...useBlockProps.save()}></PDSHero>;
 }

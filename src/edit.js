@@ -24,11 +24,5 @@ import PDSHero from "./page.webc";
  * @return {WPElement} Element to render.
  */
 export default function Edit() {
-	console.log(useBlockProps());
-	return (
-		<div
-			{...useBlockProps()}
-			dangerouslySetInnerHTML={{ __html: PDSHero }}
-		></div>
-	);
+	return <PDSHero {...useBlockProps()}></PDSHero>;
 }

@@ -1,14 +1,12 @@
 const path = require("path");
 const defaultConfig = require("@wordpress/scripts/config/webpack.config");
 const { hasArgInCLI } = require("@wordpress/scripts/utils");
-// const WebCPlugin = require("./src/webcPlugin");
 
 const isProduction = process.env.NODE_ENV === "production";
 const hasReactFastRefresh = hasArgInCLI("--hot") && !isProduction;
 
 module.exports = {
 	...defaultConfig,
-	// plugins: [...defaultConfig.plugins, new WebCPlugin()],
 	module: {
 		...defaultConfig.module,
 		rules: [
@@ -32,7 +30,7 @@ module.exports = {
 						},
 					},
 					{
-						loader: path.resolve(__dirname, "src/webcLoader.js"),
+						loader: path.resolve(__dirname, "webcLoader.js"),
 						options: {
 							/* ... */
 						},

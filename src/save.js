@@ -5,6 +5,7 @@
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
 import { useBlockProps } from "@wordpress/block-editor";
+
 import PDSHero from "./page.webc";
 
 /**

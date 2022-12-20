@@ -45,7 +45,6 @@ __webpack_require__.r(__webpack_exports__);
  * @return {WPElement} Element to render.
  */
 function Edit() {
-  console.log(_page_webc__WEBPACK_IMPORTED_MODULE_3__["default"]);
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_page_webc__WEBPACK_IMPORTED_MODULE_3__["default"], (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)());
 }
 
@@ -103,14 +102,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Users_ellyloel_DevKinsta_public_test_wp_wp_content_plugins_pds_hero_src_pds_hero_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./src/pds-hero.css */ "./src/pds-hero.css");
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (() => (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("style", {
-  dangerouslySetInnerHTML: {
-    __html: `.wgybnxrdr{color:var(--colours-custom-primary-900);font-family:var(--typography-fonts-heading);font-size:var(--typography-font-sizes-6xl);line-height:var(--typography-line-heights-shorter)}`
-  }
-}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", {
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (() => (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", {
   class: "wgybnxrdr"
 }, "Test hero")));
+
+/***/ }),
+
+/***/ "./src/pds-hero.css":
+/*!**************************!*\
+  !*** ./src/pds-hero.css ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ }),
 
@@ -160,7 +169,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"pds/hero","version":"0.1.0","title":"PDS Hero","category":"theme","icon":"block-default","description":"Example block scaffolded with Create Block tool.","supports":{"html":false},"textdomain":"pds-hero","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"pds/hero","version":"0.1.0","title":"PDS Hero","category":"theme","icon":"block-default","description":"Example block scaffolded with Create Block tool.","supports":{"html":false},"textdomain":"pds-hero","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./index.css"}');
 
 /***/ })
 

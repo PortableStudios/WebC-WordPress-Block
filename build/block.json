@@ -6,10 +6,7 @@
   "title": "PDS Hero",
   "category": "theme",
   "icon": "block-default",
-  "description": "Example block scaffolded with Create Block tool.",
-  "supports": {
-    "html": false
-  },
+  "description": "Portable design system hero component",
   "textdomain": "pds-hero",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",

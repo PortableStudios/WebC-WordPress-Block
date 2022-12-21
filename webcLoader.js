@@ -36,6 +36,11 @@ module.exports = async function (source) {
 	// Match the component host element hashed class name
 	const className = html.match(/"(.*?)"/)[1];
 
+	const markup = html.replace(
+		`class="${className}"`,
+		`{ ...props } className={props.className + " ${className}"}`
+	);
+
 	// Write out CSS file
 	fs.writeFile(
 		cssFileLocation,
@@ -65,11 +70,13 @@ ${css
 
 	return `
 		import "${cssFileLocation}";
-		export default () => (
-			<>
-				${html.trim()}
-				${scripts}
-			</>
-		)
+		export default ({ children, ...props }) => {
+			return (
+				<>
+					${markup.trim()}
+					${scripts}
+				</>
+			);
+		};
 	`.trim();
 };

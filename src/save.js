@@ -1,10 +1,10 @@
 /**
- * React hook that is used to mark the block wrapper element.
+ * useBlockProps is a React hook that is used to mark the block wrapper element.
  * It provides all the necessary props like the class name.
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
-import { useBlockProps } from "@wordpress/block-editor";
+import { InnerBlocks, useBlockProps } from "@wordpress/block-editor";
 
 import PDSHero from "./page.webc";
 
@@ -18,5 +18,9 @@ import PDSHero from "./page.webc";
  * @return {WPElement} Element to render.
  */
 export default function save() {
-	return <PDSHero {...useBlockProps.save()}></PDSHero>;
+	return (
+		<PDSHero {...useBlockProps.save()}>
+			<InnerBlocks />
+		</PDSHero>
+	);
 }

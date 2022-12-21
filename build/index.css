@@ -3,8 +3,9 @@
   \**********************************************************************************************************************************************************************/
 /**
  * Do not edit directly
- * Generated on Tue, 20 Dec 2022 05:18:46 GMT
+ * Generated on Wed, 21 Dec 2022 01:41:37 GMT
  */
-:is(.wgybnxrdr, .editor-styles-wrapper .wgybnxrdr){color:var(--colours-custom-primary-900);font-family:var(--typography-fonts-heading);font-size:var(--typography-font-sizes-6xl);line-height:var(--typography-line-heights-shorter)}
+
+:is(.wanoq8cbn, .editor-styles-wrapper .wanoq8cbn){background-color:var(--colours-custom-warning)}.wanoq8cbn :is(h1,h2,h3,h4,h5,h6){color:var(--colours-custom-neutral-900);font-family:var(--typography-fonts-heading),sans-serif;font-size:var(--typography-font-sizes-6xl);line-height:var(--typography-line-heights-shorter)}
 
 /*# sourceMappingURL=index.css.map*/

@@ -1,11 +1,15 @@
-<h1 webc:keep webc:root>
+<header webc:keep webc:root>
 	<slot></slot>
-</h1>
+</header>
 
 <style webc:scoped>
 	:host {
-		color: var(--colours-custom-primary-900);
-		font-family: var(--typography-fonts-heading);
+		background-color: var(--colours-custom-warning);
+	}
+
+	:host :is(h1, h2, h3, h4, h5, h6) {
+		color: var(--colours-custom-neutral-900);
+		font-family: var(--typography-fonts-heading), sans-serif;
 		font-size: var(--typography-font-sizes-6xl);
 		line-height: var(--typography-line-heights-shorter);
 	}
